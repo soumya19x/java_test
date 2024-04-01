@@ -21,15 +21,11 @@ public class ProgramSummary{
    
       prefixNumber = tempNumber % 1000;
       tempNumber   = tempNumber / 1000;
-   
-      
       
       System.out.println("Please enter the mobile phone number:");
       System.out.println();
       System.out.print("Your landline number is: ");
       System.out.println("+" + prefixNumber + " " + firstFour + " " + lastFour);
-      //System.out.println();
-      //System.out.println();
       
       phoneNumber = scnr.nextLong();
       
@@ -43,9 +39,8 @@ public class ProgramSummary{
    
       prefixNumber = tempNumber % 10000;
       tempNumber   = tempNumber / 10000;
-      //prefixNumber = tempNumber;
       
       System.out.print("Your mobile number is: 0");
-       System.out.println(prefixNumber + " " + firstFour + " " + lastFour);
+      System.out.println(prefixNumber + " " + firstFour + " " + lastFour);
     }
 }
