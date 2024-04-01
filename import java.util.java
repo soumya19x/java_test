@@ -16,27 +16,36 @@ public class ProgramSummary{
       lastFour = tempNumber % 10000;
       tempNumber = tempNumber / 10000;
       
-      firstFour = tempNumber % 1000;
-      tempNumber = tempNumber / 1000;
+      firstFour = tempNumber % 10000;
+      tempNumber = tempNumber / 10000;
    
-      prefixNumber = tempNumber % 100;
-      tempNumber   = tempNumber / 100;
+      prefixNumber = tempNumber % 1000;
+      tempNumber   = tempNumber / 1000;
    
-      System.out.println("+" + prefixNumber + " " + firstFour + " " + lastFour);
+      
       
       System.out.println("Please enter the mobile phone number:");
+      System.out.println();
+      System.out.print("Your landline number is: ");
+      System.out.println("+" + prefixNumber + " " + firstFour + " " + lastFour);
+      //System.out.println();
+      //System.out.println();
+      
       phoneNumber = scnr.nextLong();
       
       tempNumber = phoneNumber;
    
-      lastFour = tempNumber % 10000;
-      tempNumber = tempNumber / 10000;
+      lastFour = tempNumber % 1000;
+      tempNumber = tempNumber / 1000;
       
       firstFour = tempNumber % 1000;
       tempNumber = tempNumber / 1000;
    
-      prefixNumber = tempNumber % 100;
-      tempNumber   = tempNumber / 100;
+      prefixNumber = tempNumber % 10000;
+      tempNumber   = tempNumber / 10000;
+      //prefixNumber = tempNumber;
       
+      System.out.print("Your mobile number is: 0");
+       System.out.println(prefixNumber + " " + firstFour + " " + lastFour);
     }
 }
